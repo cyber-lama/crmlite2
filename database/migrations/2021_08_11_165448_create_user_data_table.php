@@ -20,10 +20,10 @@ class CreateUserDataTable extends Migration
             $table->tinyInteger('phone')->unique();
             $table->tinyInteger('gender')->nullable();
             $table->timestamp('birthday')->nullable();
-            $table->text('region');
-            $table->text('city');
-            $table->text('street');
-            $table->text('house');
+            $table->text('region')->nullable();
+            $table->text('city')->nullable();
+            $table->text('street')->nullable();
+            $table->text('house')->nullable();
             $table->foreignId('user_id')->constrained('users');
             $table->timestamps();
         });
