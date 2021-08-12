@@ -24,7 +24,7 @@ class CreateUserDataTable extends Migration
             $table->text('city')->nullable();
             $table->text('street')->nullable();
             $table->text('house')->nullable();
-            $table->foreignId('user_id')->constrained('users');
+            $table->foreignId('user_id')->constrained('users')->onDelete('cascade');
             $table->timestamps();
         });
     }
