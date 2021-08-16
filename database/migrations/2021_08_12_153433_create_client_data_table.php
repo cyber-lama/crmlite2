@@ -15,7 +15,7 @@ class CreateClientDataTable extends Migration
     {
         Schema::create('client_data', function (Blueprint $table) {
             $table->id();
-            $table->tinyInteger('phone')->unique();
+            $table->string('phone')->unique();
             $table->text('region')->nullable();
             $table->text('city')->nullable();
             $table->text('street')->nullable();

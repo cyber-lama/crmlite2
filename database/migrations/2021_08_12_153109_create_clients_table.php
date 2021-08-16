@@ -17,7 +17,6 @@ class CreateClientsTable extends Migration
             $table->id();
             $table->string('name', 100)->nullable();
             $table->string('email', 100)->unique();
-            $table->timestamp('email_verified_at')->nullable();
             $table->timestamps();
         });
     }

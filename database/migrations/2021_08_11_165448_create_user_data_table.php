@@ -17,7 +17,7 @@ class CreateUserDataTable extends Migration
             $table->id();
             $table->string('email', 100)->unique();
             $table->timestamp('email_verified_at')->nullable();
-            $table->tinyInteger('phone')->unique();
+            $table->string('phone')->unique();
             $table->tinyInteger('gender')->nullable();
             $table->date('birthday')->nullable();
             $table->text('region')->nullable();
