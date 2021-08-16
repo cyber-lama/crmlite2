@@ -1,7 +1,7 @@
 1. [Фабрики](factories.md)
 2. [Dependency injection](dependency_injection.md)
 2. [Связи на уровне моделей](relations.md)
-2. [Связи на уровне моделей](eloquent.md)
+2. [(ORM) Eloquent](eloquent.md)
 
 
 
