@@ -21,7 +21,7 @@ class CreatePaymentRelationsTable extends Migration
             $table->bigInteger('task_id')->unsigned();
             $table->foreign('task_id')->references('id')->on('tasks');
         });
-    }
+    }   // разбить на две
 
     /**
      * Reverse the migrations.

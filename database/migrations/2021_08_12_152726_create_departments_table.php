@@ -20,7 +20,7 @@ class CreateDepartmentsTable extends Migration
             $table->timestamps();
         });
     }
-
+    // создать таблицу departments_adreses
     /**
      * Reverse the migrations.
      *

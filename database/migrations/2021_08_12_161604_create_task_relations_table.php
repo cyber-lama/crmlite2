@@ -22,7 +22,7 @@ class CreateTaskRelationsTable extends Migration
             $table->foreign('client_id')->references('id')->on('clients');
         });
     }
-
+    // разделить таблицу на две, привязать к юзеру и клиенту отдельно
     /**
      * Reverse the migrations.
      *
